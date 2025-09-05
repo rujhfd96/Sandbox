@@ -23,7 +23,7 @@ function FeatureBadge({ img, title }) {
 export default function HomePage() {
   return (
     <main>
-      {/* HERO com <img> para controlar proporção no mobile */}
+      
       <section className="hero" aria-label="Sala de aula com crianças">
         <img src={HeroImg} alt="Sala de aula com crianças" className="hero__img" />
       </section>

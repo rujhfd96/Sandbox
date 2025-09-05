@@ -1,4 +1,4 @@
-:root{
+\:root{
   --azul:#0a4fbf;
   --azul-escuro:#083a8c;
   --azul-claro:#e9eef7;
@@ -178,6 +178,22 @@
 }
 
 @media (max-width: 768px) {
+  /* HERO: não cortar no mobile */
+  .hero{
+    /* Mantém proporção visual agradável semelhante à sua imagem 1920x680 */
+    aspect-ratio: 1920 / 680;
+    min-height: auto;         /* deixa a altura ser ditada pelo aspect-ratio */
+    height: auto;
+    background-size: contain; /* << importante: não corta a imagem */
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #e9eef7; /* fundo suave atrás das “faixas” da imagem */
+  }
+  .hero::after{
+    /* gradiente mais leve para não invadir a imagem quando ela fica menor */
+    background: linear-gradient(to bottom, rgba(0,0,0,.08), rgba(0,0,0,0) 35%);
+  }
+
   .features { margin-top: -40px; padding-bottom: 56px; }
   .features__band { height: 110px; }
   .features__band::before { left: 25%; }
@@ -206,9 +222,7 @@
     max-width: 680px;
   }
   .h3cima_pbaixo,
-  .h3cima_pbaixo2 {
-    margin: 0;
-  }
+  .h3cima_pbaixo2 { margin: 0; }
   .h3cima_pbaixo h3,
   .h3cima_pbaixo2 h3 { font-size: 1.6rem; }
   .h3cima_pbaixo p,

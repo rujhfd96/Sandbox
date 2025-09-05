@@ -13,13 +13,8 @@ const NAV_LINKS = [
 function NavBar(){
   const [open, setOpen] = useState(false);
 
-  // trava o scroll quando o menu está aberto no mobile
   useEffect(() => {
-    if (open) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    document.body.style.overflow = open ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [open]);
 
@@ -27,12 +22,8 @@ function NavBar(){
 
   return (
     <nav className={open ? 'is-open' : ''}>
-      {/* Desktop / Tablet (>=768px) */}
       <div className="nav__bar">
-        <div className="nav__brand">
-          <Link to="/" className="nav__brandLink">Sandbox</Link>
-        </div>
-
+        {/* sem brand */}
         <ul className="nav__links--desktop" role="menubar" aria-label="Navegação principal">
           {NAV_LINKS.map(({to, label}) => (
             <li key={to} role="none">
@@ -41,7 +32,6 @@ function NavBar(){
           ))}
         </ul>
 
-        {/* Botão hambúrguer (aparece no mobile) */}
         <button
           className="nav__toggle"
           aria-label={open ? 'Fechar menu' : 'Abrir menu'}
@@ -55,20 +45,9 @@ function NavBar(){
         </button>
       </div>
 
-      {/* Overlay / Scrim */}
-      <button
-        className="nav__scrim"
-        aria-hidden={!open}
-        onClick={closeMenu}
-        tabIndex={open ? 0 : -1}
-      />
+      <button className="nav__scrim" aria-hidden={!open} onClick={closeMenu} tabIndex={open ? 0 : -1} />
 
-      {/* Drawer lateral (mobile) */}
-      <aside
-        id="nav-drawer"
-        className="nav__drawer"
-        aria-hidden={!open}
-      >
+      <aside id="nav-drawer" className="nav__drawer" aria-hidden={!open}>
         <div className="nav__drawerHeader">
           <span className="nav__drawerTitle">Menu</span>
           <button className="nav__drawerClose" onClick={closeMenu} aria-label="Fechar menu">×</button>

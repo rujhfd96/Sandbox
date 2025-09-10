@@ -49,7 +49,7 @@ const SECTIONS = [
     items: [
       {
         q: "A Sandbox tem berçário em Fortaleza?",
-        a: "Sim, oferecemos berçário em Fortaleza com ambiente seguro, acolhedor e bilíngue para bebês a partir dos 4 meses.",
+        a: "Sim, oferecemos berçário em Fortaleza com ambiente seguro, acolhedor e bilíngue para bebês a partir dos 6 meses.",
       },
       {
         q: "Como é o cuidado com bebês e crianças pequenas?",

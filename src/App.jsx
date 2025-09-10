@@ -8,6 +8,7 @@ import SobrePage from './Pages/SobrePage/SobrePage';
 import ReportPage from './Pages/ReportPage/ReportPage';
 import GaleriaPage from './Pages/GaleriaPage/GaleriaPage';
 import MetodologiaPage from './Pages/MetodologiaPage/MetodologiaPage';
+import FaqPage from './Pages/FaqPage/FaqPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/formulario' element={<ReportPage/>}/>
         <Route path='/galeria' element={<GaleriaPage/>}/>
         <Route path='/metodologia' element={<MetodologiaPage/>}/>
+        <Route path='/faq' element={<FaqPage/>}/>
 
       </Routes>
       <Footer/>

@@ -16,7 +16,6 @@ export default function EnrollmentPage() {
     seriePretendida: "Educação Infantil – Berçário",
     turno: "Manhã",
     bilinguismo: "Português + Inglês",
-    interesseIntercambio: "Talvez",
     necessidadesEspeciais: "Não",
     descricaoNecessidades: "",
     escolaAtual: "",
@@ -59,7 +58,6 @@ export default function EnrollmentPage() {
             ${row("Série/Ano pretendido", form.seriePretendida)}
             ${row("Turno desejado", form.turno)}
             ${row("Programa bilíngue", form.bilinguismo)}
-            ${row("Interesse em intercâmbio", form.interesseIntercambio)}
             ${row("Necessidades específicas", form.necessidadesEspeciais)}
             ${
               form.descricaoNecessidades?.trim()
@@ -100,7 +98,6 @@ ${escapeHtml(form.mensagem || "—")}
         seriePretendida: "Educação Infantil – Berçário",
         turno: "Manhã",
         bilinguismo: "Português + Inglês",
-        interesseIntercambio: "Talvez",
         necessidadesEspeciais: "Não",
         descricaoNecessidades: "",
         escolaAtual: "",
@@ -124,7 +121,6 @@ ${escapeHtml(form.mensagem || "—")}
         </p>
 
         <form className="report-form" onSubmit={handleSubmit}>
-          
           <div className="grid-2">
             <div className="field">
               <label>Nome do responsável *</label>
@@ -192,7 +188,6 @@ ${escapeHtml(form.mensagem || "—")}
             </select>
           </div>
 
-          
           <div className="grid-2">
             <div className="field">
               <label>Nome do aluno *</label>
@@ -256,20 +251,8 @@ ${escapeHtml(form.mensagem || "—")}
             </div>
           </div>
 
-          <div className="grid-3">
-            <div className="field">
-              <label>Interesse em intercâmbio</label>
-              <select
-                name="interesseIntercambio"
-                value={form.interesseIntercambio}
-                onChange={handleChange}
-              >
-                <option>Sim</option>
-                <option>Talvez</option>
-                <option>Não</option>
-              </select>
-            </div>
-
+          {/* Este bloco era grid-3; como removemos o campo de intercâmbio, deixamos grid-2 */}
+          <div className="grid-2">
             <div className="field">
               <label>Necessidades específicas</label>
               <select
@@ -340,7 +323,6 @@ ${escapeHtml(form.mensagem || "—")}
     </main>
   );
 }
-
 
 function row(label, value) {
   return `

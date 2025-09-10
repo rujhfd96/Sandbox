@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { to: '/metodologia', label: 'Sobre a metodologia' },
   { to: '/galeria', label: 'Galeria de imagens' },
   { to: '/formulario', label: 'Envie Formulário' },
+  { to: '/faq', label: 'Perguntas Frequentes' }
 ];
 
 function NavBar(){

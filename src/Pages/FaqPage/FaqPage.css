@@ -271,19 +271,3 @@
 }
 
 
-@media (prefers-color-scheme: dark){
-  .sandbox-faq{
-    --sf-bg:#0e1627;
-    --sf-card:#101b2f;
-    --sf-text:#e6ebf5;
-    --sf-muted:#9fb0c8;
-    --sf-line:#1f2a41;
-    box-shadow: none;
-  }
-  .sandbox-faq__header{ background: linear-gradient(180deg,#0f1b33 0%, #0c182c 100%); border-color: var(--sf-line); }
-  .sandbox-faq__toc{ background: linear-gradient(180deg, #0a44a3 0%, #083b92 100%); }
-  .sandbox-faq__tocLink{ background:#0f1b33; color:#e6ebf5; border-color:#1f2a41; }
-  .sandbox-faq__btn--ghost{ background: transparent; color:#b7ccff; border-color:#3a62e6; }
-  .sandbox-faq__answer{ background: linear-gradient(180deg, #0f1b33 0%, #0c182c 100%); }
-  .sandbox-faq__answerText{ color:#d6deee; }
-}

@@ -1,13 +1,13 @@
 
 import { useState } from "react";
 import "./GaleriaPage.css";
-import imagem1 from '../../../public/IMAGENS/livros.jpg'
+import imagem1 from '../../../public/IMAGENS/livros.JPG'
 import imagem2 from '../../../public/IMAGENS/casaSandbox2.jpg'
 import imagem3 from '../../../public/IMAGENS/sala1.jpg'
 import imagem4 from '../../../public/IMAGENS/piscina.jpg'
-import imagem5 from '../../../public/IMAGENS/quadra.jpg'
-import imagem6 from '../../../public/IMAGENS/sala4.jpg'
-import imagem7 from '../../../public/IMAGENS/arCond.jpg'
+import imagem5 from '../../../public/IMAGENS/quadra.JPG'
+import imagem6 from '../../../public/IMAGENS/sala4.JPG'
+import imagem7 from '../../../public/IMAGENS/arCond.JPG'
 
 
 const imagens = [

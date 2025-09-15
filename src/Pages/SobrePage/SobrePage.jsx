@@ -1,7 +1,7 @@
 import './SobrePage.css';
-import HeroImg from "../../../public/IMAGENS/classroom-5-1920x680.jpg";
+import HeroImg from "../../../public/IMAGENS/principal.jpg";
 import AdrianaImg from '../../../public/IMAGENS/Adriana.png'
-import nossaMissao from '../../../public/IMAGENS/sandboxs.jpeg'
+import nossaMissao from '../../../public/IMAGENS/missao2.jpg'
 
 function SobrePage(){
     return(

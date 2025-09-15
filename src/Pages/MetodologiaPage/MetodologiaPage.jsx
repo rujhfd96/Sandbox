@@ -1,7 +1,7 @@
 
 import "./MetodologiaPage.css";
-import criancaAprendendo from '../../../public/IMAGENS/criancaAprendendo.jpg'
-import aulaCriativa from '../../../public/IMAGENS/aulaCriativa.jpg'
+import criancaAprendendo from '../../../public/IMAGENS/missao.jpg'
+import aulaCriativa from '../../../public/IMAGENS/ruivo.jpg'
 
 export default function MetodologiaPage() {
   return (

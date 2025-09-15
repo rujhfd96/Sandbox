@@ -1,10 +1,10 @@
 import "./HomePage.css";
 
-import HeroImg from "../../../public/IMAGENS/classroom-5-1920x680.jpg";
-import LangImg from "../../../public/IMAGENS/Linguagem.jpg";
-import WorldImg from "../../../public/IMAGENS/ClasseMundial.jpg";
-import GrowthImg from "../../../public/IMAGENS/Enriquecimento.jpg";
-import CasaSandbox from "../../../public/IMAGENS/casaSandbox.jpg";
+import HeroImg from "../../../public/IMAGENS/principal.jpg";
+import LangImg from "../../../public/IMAGENS/linguagem2.jpg";
+import WorldImg from "../../../public/IMAGENS/Enriquecimento2.jpg";
+import GrowthImg from "../../../public/IMAGENS/Enriquecimento3.jpg";
+import CasaSandbox from "../../../public/IMAGENS/piscina.jpg";
 import Aviao from "../../../public/IMAGENS/aviao.jpg";
 
 function FeatureBadge({ img, title }) {

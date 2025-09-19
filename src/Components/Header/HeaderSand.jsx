@@ -1,5 +1,6 @@
 import './HeaderSand.css';
 import Logo from '../../../public/IMAGENS/logosandbox.png';
+import { FaWhatsapp } from "react-icons/fa";
 
 function HeaderSand() {
   const whatsappNumber = "5585987563949"; 
@@ -9,13 +10,10 @@ function HeaderSand() {
   return (
     <header>
       <img src={Logo} alt="Logo Sandbox" />
-      <div>
-        <h2>
-          Av. Clóvis Matos, 1131 - Dunas, Fortaleza - CE, 60182-251 <br />
-          (85) 4002-0041
-        </h2>
-        <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+      <div className="header-actions">
+        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="whatsapp-link">
           <button className='botao'>Entre em Contato!</button>
+          <FaWhatsapp className="whatsapp-icon" />
         </a>
       </div>
     </header>

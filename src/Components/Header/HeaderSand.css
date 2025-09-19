@@ -2,123 +2,99 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 5%;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  flex-wrap: wrap;
-}
-
-header div {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
+  padding: 8px 5%;
+  background: #fff;
+  color: #000;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
   flex-wrap: wrap;
 }
 
 header img {
-  height: 80px;
+  height: 56px;
   object-fit: contain;
+  transition: transform 0.25s ease;
+}
+header img:hover {
+  transform: scale(1.05);
 }
 
-header h2 {
-  font-size: clamp(18px, 1.5vw, 22px);
-  line-height: 1.4;
-  font-weight: 1000;
-  color: #1133a2;
-  text-align: center;
-  margin: 0 20px;
-  max-width: 50%;
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
+/* Link contendo botão + ícone */
+.whatsapp-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === Botão moderno === */
 header .botao {
-  background-color: #0bc66c;
-  color: #000000;
-  font-size: clamp(15px, 1.2vw, 22px);
-  font-weight: 700;
-  padding: 12px 25px;
-  border-radius: 25px;
+  background: linear-gradient(135deg, #0bc66c, #07a35a);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 12px;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
 }
 
 header .botao:hover {
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #07a35a, #0bc66c);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.16);
+}
+
+/* Ícone do WhatsApp */
+.whatsapp-icon {
+  font-size: 28px;
+  color: #25d366;
+  transition: transform 0.25s ease;
+}
+
+.whatsapp-link:hover .whatsapp-icon {
+  transform: scale(1.15);
 }
 
 /* ====== TABLET ====== */
 @media (max-width: 992px) {
-  header div { gap: 30px; }
-  header h2 { max-width: 60%; }
+  header img { height: 50px; }
+  header .botao { font-size: 14px; padding: 8px 16px; }
+  .whatsapp-icon { font-size: 24px; }
 }
 
 /* ====== MOBILE ====== */
 @media (max-width: 768px) {
-  /* menos padding geral */
   header {
     justify-content: center;
-    gap: 12px;
-    padding: 8px 16px;
-  }
-
-  /* bloco da direita mais “justo” */
-  header div {
     gap: 10px;
+    padding: 6px 12px;
   }
-
-  /* logo menor */
-  header img {
-    height: 52px;
-  }
-
-  /* texto mais discreto */
-  header h2 {
-    font-size: 14px;     /* antes 18px */
-    line-height: 1.25;   /* mais compacto */
-    font-weight: 600;    /* mais leve que 1000 */
-    margin: 0 8px;
-    max-width: 100%;
-  }
-
-  /* botão compacto */
+  header img { height: 44px; }
   header .botao {
-    font-size: 14px;
-    padding: 8px 14px;
-    border-radius: 18px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    font-size: 13px;
+    padding: 7px 14px;
+    border-radius: 10px;
   }
+  .whatsapp-icon { font-size: 22px; }
 }
 
 /* ====== MOBILE PEQUENO ====== */
 @media (max-width: 430px) {
-  /* empilha e encurta tudo */
-  header {
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
+  header { flex-direction: column; gap: 6px; }
+  header img { height: 40px; }
+  header .botao {
+    font-size: 12px;
     padding: 6px 12px;
   }
-
-  header div {
-    gap: 8px;
-  }
-
-  header img {
-    height: 46px;
-  }
-
-  header h2 {
-    font-size: 13px;
-    line-height: 1.2;
-    font-weight: 600;
-    max-width: 92%;
-    margin: 2px 0 0;
-  }
-
-  header .botao {
-    font-size: 13px;
-    padding: 7px 12px;
-    border-radius: 16px;
-  }
+  .whatsapp-icon { font-size: 20px; }
 }

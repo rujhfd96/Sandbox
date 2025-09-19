@@ -1,18 +1,11 @@
-:root{
-  --azul:#004aad;
-  --azul-escuro:#083a8c;
-  --amarelo:#ffcc00;
-  --cinza-bg:#f5f5f5;
-}
-
-.report-page{
-  width:100%;
+.report-page {
+  width: 100%;
   background: #fff;
   padding: 40px 16px 80px;
 }
 
-.report-card{
-  max-width: 980px;
+.report-card {
+  max-width: 680px;
   margin: 0 auto;
   background: #fff;
   border-radius: 14px;
@@ -20,42 +13,44 @@
   padding: 28px;
 }
 
-.report-card h1{
+.report-card h1 {
   margin: 0 0 4px 0;
   color: var(--azul);
-  font-size: 28px;
+  font-size: 26px;
 }
 
-.report-card .muted{
+.report-card .muted {
   margin: 0 0 20px 0;
   color: #64748b;
   font-size: 14px;
 }
 
-.report-form{
+.report-form {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.grid-2{
+.grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
 
-.grid-3{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px;
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-
-.field{ display:flex; flex-direction: column; gap: 8px; }
-.field label{ font-weight: 700; color: #0f2544; font-size: 14px; }
+.field label {
+  font-weight: 700;
+  color: #0f2544;
+  font-size: 14px;
+}
 
 .field input,
 .field select,
-.field textarea{
+.field textarea {
   border: 1px solid #d7deea;
   background: var(--cinza-bg);
   border-radius: 10px;
@@ -64,14 +59,14 @@
   font-size: 15px;
   color: #0f172a;
 }
-.field textarea{ resize: vertical; }
+.field textarea { resize: vertical; }
 
-.actions{
+.actions {
   display: flex;
   justify-content: flex-end;
   margin-top: 8px;
 }
-.actions button{
+.actions button {
   background: var(--azul);
   color: #fff;
   border: none;
@@ -81,29 +76,18 @@
   cursor: pointer;
   transition: transform .15s ease, background .2s ease;
 }
-.actions button:hover{
+.actions button:hover {
   background: var(--azul-escuro);
   transform: translateY(-1px);
 }
-.actions button:disabled{ opacity: .6; cursor: not-allowed; }
+.actions button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
 
 /* ====== RESPONSIVO ====== */
-@media (max-width: 992px) {
-  .report-card { padding: 22px; }
-}
-
 @media (max-width: 768px) {
-  .report-page { padding: 28px 12px 56px; }
-  .report-card h1 { font-size: 24px; }
   .grid-2 { grid-template-columns: 1fr; }
-  .grid-3 { grid-template-columns: 1fr; }
   .actions { justify-content: stretch; }
   .actions button { width: 100%; }
-}
-
-@media (max-width: 430px) {
-  .report-card { padding: 18px; border-radius: 12px; }
-  .report-card h1 { font-size: 22px; }
-  .field label { font-size: 13px; }
-  .field input, .field select, .field textarea { font-size: 14px; padding: 11px 12px; }
 }

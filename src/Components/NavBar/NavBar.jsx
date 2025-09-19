@@ -7,7 +7,7 @@ const NAV_LINKS = [
   { to: '/sobre', label: 'Sobre Nós' },
   { to: '/metodologia', label: 'Sobre a metodologia' },
   { to: '/galeria', label: 'Galeria de imagens' },
-  { to: '/formulario', label: 'Envie Formulário' },
+  { to: '/formulario', label: 'Entre em Contato' },
   { to: '/faq', label: 'Perguntas Frequentes' }
 ];
 

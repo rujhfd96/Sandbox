@@ -5,7 +5,7 @@ import LangImg from "../../../public/IMAGENS/linguagem2.jpg";
 import WorldImg from "../../../public/IMAGENS/Enriquecimento2.jpg";
 import GrowthImg from "../../../public/IMAGENS/Enriquecimento3.jpg";
 import CasaSandbox from "../../../public/IMAGENS/piscina.jpg";
-import Aviao from "../../../public/IMAGENS/aviao.jpg";
+import Aviao from "../../../public/IMAGENS/inter.jpg";
 
 function FeatureBadge({ img, title }) {
   return (

@@ -1,82 +1,154 @@
-import './SobrePage.css';
+import "./SobrePage.css";
 import HeroImg from "../../../public/IMAGENS/principal.jpg";
-import AdrianaImg from '../../../public/IMAGENS/Adriana.png'
-import nossaMissao from '../../../public/IMAGENS/missao2.jpg'
+import AdrianaImg from "../../../public/IMAGENS/Adriana.png";
+import nossaMissao from "../../../public/IMAGENS/missao2.jpg";
+import filosofiaImg from "../../../public/IMAGENS/filosofia2.jpg";
 
-function SobrePage(){
-    return(
-        <main>
-           <section
-                   className="hero2"
-                   style={{ backgroundImage: `url(${HeroImg})` }}
-                   aria-label="Sala de aula com crianças"
-                 >
-                    <h1>Sobre a Sandbox</h1>
-                   
-            </section>
-            <section className='features2'>
-                <div className="features__band2" >
-                    <h1>Nossa escola</h1>
-                </div>
-                <div className='container_mae'>
-                    <img src={AdrianaImg} alt='Foto da diretora'/>
-                    <div className='container_texto_4'>
-                        <h2>Sejam bem vindos a SandBox!</h2>
-                        <p>A Sandbox International School nasceu com um propósito diferente: mostrar que aprender pode ser uma aventura cheia de descobertas. Desde os primeiros meses de vida até o 7º ano do Ensino Fundamental, nossos alunos crescem em um ambiente bilíngue que integra o melhor
-                             dos dois mundos: português no período da manhã e inglês no período da tarde. Assim, o domínio de uma segunda língua acontece de forma natural, leve e diária, sem peso, como parte da rotina.
-                            Nosso espaço é um capítulo à parte. Diferente das escolas convencionais, a Sandbox foi planejada para que as crianças vivam experiências completas. Temos uma área ampla, aberta e cheia de 
-                            vida, onde brincar e aprender se misturam. Há piscina para os dias de sol, gramados que convidam à corrida e ao jogo, e até áreas de areia que estimulam a criatividade e a imaginação. Cada canto foi pensado para acolher, desafiar e divertir, transformando a escola em um lugar onde a criança se sente livre, segura e feliz.
-                            Mais do que cadeiras e lousas, acreditamos em cenários que incentivam a curiosidade. Ao invés de limitar, abrimos horizontes: nossos clubes e atividades extracurriculares prolongam a experiência para além do horário regular, conectando aprendizado com prazer. A Sandbox é, acima de tudo, um espaço que une afeto, inovação e educação de qualidade — preparando cidadãos globais, mas também crianças plenas, que sabem brincar, conviver e sonhar.
-                            </p>
-                    </div>
-                </div>
-                <h3>Adriana Franklin<br/>Diretora da escola</h3>
-            </section>
-            <section className='nossa_missao'>
-                <div className='nossa_missao_content'>
-                    <img src={nossaMissao} alt='imagem aluna sandbox'/>
-                    <div className='cima-baixo2'>
-                        <h3>Nossa missão</h3>
-                        <p>Na Sandbox International School, nossa missão é formar crianças bilíngues, seguras e felizes, preparadas para enfrentar um mundo em constante mudança sem abrir mão da infância. Acreditamos que aprender deve ser leve, divertido e significativo, por isso unimos o ensino de qualidade em português e inglês com um ambiente acolhedor, cheio de natureza, movimento e descobertas.
-                            Mais do que transmitir conteúdos, buscamos despertar a curiosidade, a autonomia e o respeito ao pr
-                            óximo. Queremos que cada aluno se sinta parte de uma comunidade que valoriza tanto o conhecimento quanto os valores 
-                            humanos.
-                            Nosso compromisso é acompanhar cada etapa do desenvolvimento, da 
-                            primeira infância até o Ensino Fundamental, oferecendo experiências que unem cultura, criatividade e inovação. Na Sandbox, educar é preparar para a vida — com alegria, confiança e a certeza de que aqui cada criança encontra espaço para crescer em todas as dimensões.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section className="valores">
-  <div className="valores_content">
-    <h2>Nossos Valores</h2>
-    <div className="valores_grid">
-      
-      <div className="valor_card">
-        <h3>Imersão Bilíngue</h3>
-        <p>Na Sandbox, as crianças não apenas aprendem português e inglês — elas vivem os dois idiomas no dia a dia. Essa imersão natural amplia a agilidade cognitiva, a compreensão cultural e a comunicação global.</p>
-      </div>
+function SobrePage() {
+  return (
+    <main>
+      {/* HERO */}
+      <section
+        className="hero2"
+        style={{ backgroundImage: `url(${HeroImg})` }}
+        aria-label="Sala de aula com crianças"
+      >
+        <h1>Sobre a Sandbox</h1>
+      </section>
 
-      <div className="valor_card">
-        <h3>Comunidade</h3>
-        <p>Acreditamos na força da comunidade escolar. Alunos, famílias e equipe caminham juntos, em um ambiente de respeito, apoio e cooperação, onde todos se sentem acolhidos e pertencentes.</p>
-      </div>
+      {/* NOSSA ESCOLA */}
+      <section className="features2">
+        <div className="features__band2">
+          <h1>Nossa Escola</h1>
+        </div>
 
-      <div className="valor_card">
-        <h3>Cidadania Global</h3>
-        <p>Preparamos nossos alunos para serem cidadãos do mundo. Respeito, empatia e colaboração são cultivados diariamente, formando crianças capazes de compreender diferentes culturas e atuar positivamente em qualquer lugar.</p>
-      </div>
+        <div className="container_mae">
+          <img src={AdrianaImg} alt="Foto da diretora" />
+          <div className="container_texto_4">
+            <h2>Sejam bem-vindos à Sandbox!</h2>
+            <p>
+              A Sandbox International School nasceu com um propósito diferente:
+              mostrar que aprender pode ser uma aventura cheia de descobertas.
+              Desde os primeiros meses de vida até os 12 anos, nossos alunos
+              crescem em um ambiente bilíngue que integra o melhor dos dois
+              mundos — português e inglês — com leveza e naturalidade.
+            </p>
+            <p>
+              Nossa escola foi planejada para oferecer experiências completas.
+              Temos áreas amplas, piscina, gramados e espaços de areia que
+              estimulam a imaginação e o movimento. Cada canto foi pensado para
+              acolher e desafiar as crianças, promovendo aprendizado e alegria.
+            </p>
+          </div>
+        </div>
+        <h3>
+          Adriana Franklin
+          <br />
+          Diretora da escola
+        </h3>
+      </section>
 
-      <div className="valor_card">
-        <h3>Desenvolvimento Integral</h3>
-        <p>Mais do que conteúdos, cuidamos do crescimento pleno das crianças: acadêmico, emocional, social e criativo. Queremos formar indivíduos seguros, éticos e preparados para os desafios da vida.</p>
-      </div>
+      {/* NOSSA MISSÃO */}
+      <section className="nossa_missao">
+        <div className="nossa_missao_content">
+          <img src={nossaMissao} alt="Imagem aluna Sandbox" />
+          <div className="cima-baixo2">
+            <h3>Nossa Missão</h3>
+            <p>
+              O objetivo da Sandbox International School é promover, em parceria
+              com os pais, a qualidade de experiência individual da criança até
+              os doze anos. A primeira infância é fundamental para a formação
+              integral, e por isso oferecemos um programa cuidadosamente
+              planejado em um ambiente repleto de estímulos.
+            </p>
+            <p>
+              Nesse espaço, as crianças aprendem a conviver, compartilhar,
+              ajudar umas às outras, trabalhar em grupo e “sonhar em voz alta”.
+              Nosso ambiente é seguro, saudável e alegre, onde o aprendizado
+              acontece por meio de experiências reais, descobertas e admiração.
+            </p>
+            <p>
+              Queremos que cada criança tenha boas lembranças de sua infância e
+              que nossos profissionais se orgulhem de contribuir para esse
+              crescimento. É nossa responsabilidade fazer o que é certo para as
+              crianças — e aceitamos esse compromisso com mente aberta e desejo
+              constante de melhorar.
+            </p>
+          </div>
+        </div>
+      </section>
 
+      {/* NOSSA FILOSOFIA */}
+<section className="nossa_filosofia">
+  <div className="nossa_filosofia_content">
+    <img src={filosofiaImg} alt="Crianças aprendendo na Sandbox" />
+    <div className="nossa_filosofia_texto">
+      <h3>Nossa Filosofia</h3>
+      <p>
+        Nossa filosofia educacional foi construída com base na experiência
+        e no conhecimento. Consideramos todos os aspectos da criança —
+        social, intelectual e físico. Acreditamos que a escola e as
+        famílias são parceiras na educação, e queremos que os pais se
+        sintam acolhidos e compreendidos.
+      </p>
+      <p>
+        As crianças aprendem brincando, com as mãos nas experiências.
+        Devem poder se sujar, explorar, inventar e descobrir. A brincadeira
+        é a forma mais pura de aprendizado e desenvolve criatividade,
+        empatia e imaginação.
+      </p>
+      <p>
+        Nosso papel é proporcionar um ambiente divertido e criativo, livre
+        de pressões adultas, onde cada criança possa se desenvolver em seu
+        próprio ritmo, aprendendo com alegria e confiança.
+      </p>
     </div>
   </div>
 </section>
-        </main>
-    )
+
+
+      {/* VALORES */}
+      <section className="valores">
+        <div className="valores_content">
+          <h2>Nossos Valores</h2>
+          <div className="valores_grid">
+            <div className="valor_card">
+              <h3>Imersão Bilíngue</h3>
+              <p>
+                As crianças vivem o português e o inglês diariamente. Essa
+                imersão amplia a agilidade cognitiva, o respeito cultural e a
+                comunicação global.
+              </p>
+            </div>
+
+            <div className="valor_card">
+              <h3>Comunidade</h3>
+              <p>
+                Acreditamos na força da comunidade escolar. Alunos, famílias e
+                equipe caminham juntos com respeito, apoio e cooperação.
+              </p>
+            </div>
+
+            <div className="valor_card">
+              <h3>Cidadania Global</h3>
+              <p>
+                Preparamos cidadãos do mundo com empatia, ética e colaboração,
+                capazes de atuar positivamente em qualquer cultura.
+              </p>
+            </div>
+
+            <div className="valor_card">
+              <h3>Desenvolvimento Integral</h3>
+              <p>
+                Cultivamos o crescimento acadêmico, emocional, social e
+                criativo, formando indivíduos confiantes e felizes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }
 
 export default SobrePage;

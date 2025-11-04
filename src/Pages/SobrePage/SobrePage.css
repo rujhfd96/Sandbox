@@ -12,6 +12,8 @@
   text-align: center;
 }
 
+
+
 .hero2 h1 {
   font-size: 64px;
   color: #fff;
@@ -71,6 +73,19 @@
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
   object-fit: cover;
   display: block;
+}
+
+.container_mae > img.AdrianaImg {
+  width: 520px;              /* tamanho ideal para imagem horizontal */
+  height: 330px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.container_mae > img.AdrianaImg:hover {
+  transform: scale(1.02); /* leve zoom no hover */
 }
 
 .container_texto_4 {
@@ -438,4 +453,23 @@
   .valor_card {
     padding: 22px;
   }
+
+  @media (max-width: 1200px) {
+  .container_mae > img.AdrianaImg {
+    width: 800px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container_mae > img.AdrianaImg {
+    width: 680px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container_mae > img.AdrianaImg {
+    width: 100%;
+    max-width: 720px;
+  }
+}
 }

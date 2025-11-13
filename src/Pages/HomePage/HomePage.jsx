@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./HomePage.css";
 
-import HeroVideo from "../../../public/IMAGENS/hero.mp4";
+import HeroVideo from "../../../public/IMAGENS/videoimpor.mp4";
 import LangImg from "../../../public/IMAGENS/linguagem2.jpg";
 import WorldImg from "../../../public/IMAGENS/Enriquecimento2.jpg";
 import GrowthImg from "../../../public/IMAGENS/Enriquecimento3.jpg";

@@ -37,7 +37,7 @@ function HeaderSand() {
           rel="noopener noreferrer"
           className="whatsapp-link"
         >
-          <button className="botao">{t.button}</button>
+          
           <FaWhatsapp className="whatsapp-icon" />
         </a>
       </div>

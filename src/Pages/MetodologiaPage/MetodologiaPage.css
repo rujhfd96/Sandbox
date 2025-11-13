@@ -9,6 +9,8 @@
 }
 
 /* ====== CONTAINER PRINCIPAL ====== */
+
+
 .metodologia-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -22,6 +24,22 @@
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
   animation: fadeIn 1.2s ease-in-out;
 }
+
+.metodologia-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 4rem 5%;
+  max-width: 1000px;
+  margin: auto;
+  background: linear-gradient(180deg, var(--branco) 0%, var(--cinza-claro) 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+
+
 
 /* ====== TÍTULOS E TEXTOS ====== */
 .texto h1 {

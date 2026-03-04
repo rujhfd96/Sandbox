@@ -28,6 +28,9 @@
   align-items: center;
   min-height: 200px;
   margin-top: 40px;
+
+  /* ADICIONE estas 2 linhas */
+  padding-bottom: 60px;
 }
 
 .features__band2 {
@@ -58,12 +61,12 @@
 }
 
 .container_mae {
-  max-width: var(--container-w);
-  margin: 36px auto 0;
+  max-width: 1200px;
+  margin: 50px auto 0;
   display: flex;
   align-items: flex-start;
-  gap: var(--gap-x);
-  padding: 0 16px;
+  gap: 50px;
+  padding: 0 20px;
 }
 
 .container_mae>img {
@@ -76,38 +79,50 @@
 }
 
 .container_mae > img.AdrianaImg {
-  width: 520px;              /* tamanho ideal para imagem horizontal */
+  width: 520px;
   height: 330px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
 .container_mae > img.AdrianaImg:hover {
-  transform: scale(1.02); /* leve zoom no hover */
+  transform: scale(1.02);
 }
+
+
 
 .container_texto_4 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 18px;
+  max-width: 650px;
 }
 
+/* título */
 .container_texto_4 h2 {
-  font-size: 2rem;
-  line-height: 1.15;
-  color: #004aad;
-  margin: 0;
+  font-size: 2.2rem;
   font-weight: 700;
+  color: #0a3a78;
+  margin: 0;
+  border-left: 6px solid #596861;
+  padding-left: 14px;
 }
 
+/* parágrafos */
 .container_texto_4 p {
+  font-size: 1.1rem;
+  line-height: 1.7;
   color: #0d0000;
-  line-height: 1.65;
-  font-size: 1.05rem;
   text-align: justify;
+  margin: 0;
+}
+
+/* último parágrafo com respiro */
+.container_texto_4 p:last-child {
+  margin-bottom: 10px;
 }
 
 /* legenda diretora */

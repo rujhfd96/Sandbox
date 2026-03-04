@@ -8,80 +8,116 @@ import { useLanguage } from "../../context/LanguageContext";
 
 const TEXTS = {
   pt: {
-    heroTitle: "Sobre a Sandbox",
+    heroTitle: "Sobre a Sandbox", // NÃO tirar
+
     sectionSchoolTitle: "Nossa Escola",
-    welcomeTitle: "Sejam bem-vindos à Sandbox!",
-    welcomeP1:
-      "A Sandbox International School nasceu com um propósito diferente: mostrar que aprender pode ser uma aventura cheia de descobertas. Desde os primeiros meses de vida até os 12 anos, nossos alunos crescem em um ambiente bilíngue que integra o melhor dos dois mundos — português e inglês — com leveza e naturalidade.",
+
+    welcomeTitle: "Boas-vindas",
+    welcomeP1: "Seja bem-vindo à Escola Internacional de Fortaleza.",
     welcomeP2:
-      "Nossa escola foi planejada para oferecer experiências completas. Temos áreas amplas, piscina, gramados e espaços de areia que estimulam a imaginação e o movimento. Cada canto foi pensado para acolher e desafiar as crianças, promovendo aprendizado e alegria.",
-    missionTitle: "Nossa Missão",
+      "Vivemos em um mundo que muda todos os dias — e acreditamos que a educação precisa preparar para o aqui e o agora. Mas também acreditamos que a infância não pode ser apressada.",
+    welcomeP3:
+      "Somos o encontro entre imaginação e possibilidades reais. Entre raízes locais e visão global. Entre acolhimento e excelência acadêmica.",
+    welcomeP4:
+      "Aqui, o inglês não é apenas uma disciplina. É vivência, imersão e conexão com o mundo — desenvolvida com naturalidade, confiança e autonomia.",
+    welcomeP5:
+      "Aprender, para nós, vai além da sala de aula. Acontece na areia, sob as árvores, nos projetos, nas experiências e nas descobertas que despertam curiosidade e coragem.",
+
+    missionTitle: "Missão",
     missionP1:
-      "O objetivo da Sandbox International School é promover, em parceria com os pais, a qualidade de experiência individual da criança até os doze anos. A primeira infância é fundamental para a formação integral, e por isso oferecemos um programa cuidadosamente planejado em um ambiente repleto de estímulos.",
+      "Formar cidadãos globais com base acadêmica sólida, fluência em inglês e desenvolvimento humano integral, respeitando o tempo e o processo de cada criança.",
     missionP2:
-      "Nesse espaço, as crianças aprendem a conviver, compartilhar, ajudar umas às outras, trabalhar em grupo e “sonhar em voz alta”. Nosso ambiente é seguro, saudável e alegre, onde o aprendizado acontece por meio de experiências reais, descobertas e admiração.",
+      "Preparamos nossos alunos para exames internacionais, intercâmbios, novas culturas e desafios reais — sem perder de vista o presente, a infância e o desenvolvimento emocional.",
     missionP3:
-      "Queremos que cada criança tenha boas lembranças de sua infância e que nossos profissionais se orgulhem de contribuir para esse crescimento. É nossa responsabilidade fazer o que é certo para as crianças — e aceitamos esse compromisso com mente aberta e desejo constante de melhorar.",
-    philosophyTitle: "Nossa Filosofia",
+      "Nossa missão é unir educação internacional e formação humana, preparando para o futuro enquanto valorizamos profundamente o agora.",
+
+    philosophyTitle: "Filosofia",
     philosophyP1:
-      "Nossa filosofia educacional foi construída com base na experiência e no conhecimento. Consideramos todos os aspectos da criança — social, intelectual e físico. Acreditamos que a escola e as famílias são parceiras na educação, e queremos que os pais se sintam acolhidos e compreendidos.",
+      "Na Sandbox Escola Internacional de Fortaleza, acreditamos que educar é preparar para o mundo sem apressar a infância.",
     philosophyP2:
-      "As crianças aprendem brincando, com as mãos nas experiências. Devem poder se sujar, explorar, inventar e descobrir. A brincadeira é a forma mais pura de aprendizado e desenvolve criatividade, empatia e imaginação.",
+      "Unimos excelência acadêmica e formação humana, integrando base sólida, fluência em inglês e desenvolvimento emocional. Para nós, o aprendizado é vivo: acontece nas experiências, nas relações, na investigação e na descoberta.",
     philosophyP3:
-      "Nosso papel é proporcionar um ambiente divertido e criativo, livre de pressões adultas, onde cada criança possa se desenvolver em seu próprio ritmo, aprendendo com alegria e confiança.",
+      "Valorizamos o tempo de cada criança, respeitamos seus processos e cultivamos autonomia, confiança e protagonismo.",
+    philosophyP4:
+      "Somos internacionais porque formamos cidadãos capazes de dialogar com o mundo.",
+    philosophyP5:
+      "Somos de Fortaleza porque acreditamos no acolhimento, na proximidade e na construção de vínculos verdadeiros.",
+    philosophyP6:
+      "Preparamos para certificações, intercâmbios e desafios reais. Mas, acima de tudo, formamos para o presente — com consciência, identidade e propósito.",
+
+    // Mantive "Nossos Valores" para não quebrar a estrutura, mas adaptei o texto ao novo conteúdo
     valuesTitle: "Nossos Valores",
-    value1Title: "Imersão Bilíngue",
+    value1Title: "Vivência Bilíngue",
     value1Text:
-      "As crianças vivem o português e o inglês diariamente. Essa imersão amplia a agilidade cognitiva, o respeito cultural e a comunicação global.",
-    value2Title: "Comunidade",
+      "O inglês é vivência, imersão e conexão com o mundo — desenvolvido com naturalidade, confiança e autonomia.",
+    value2Title: "Infância Respeitada",
     value2Text:
-      "Acreditamos na força da comunidade escolar. Alunos, famílias e equipe caminham juntos com respeito, apoio e cooperação.",
-    value3Title: "Cidadania Global",
+      "Acreditamos que a infância não pode ser apressada. Respeitamos o tempo e o processo de cada criança.",
+    value3Title: "Visão Global, Raízes Locais",
     value3Text:
-      "Preparamos cidadãos do mundo com empatia, ética e colaboração, capazes de atuar positivamente em qualquer cultura.",
-    value4Title: "Desenvolvimento Integral",
+      "Somos o encontro entre raízes locais e visão global: acolhimento, proximidade e vínculos verdadeiros.",
+    value4Title: "Excelência com Humanidade",
     value4Text:
-      "Cultivamos o crescimento acadêmico, emocional, social e criativo, formando indivíduos confiantes e felizes.",
+      "Unimos excelência acadêmica e formação humana, integrando base sólida, fluência em inglês e desenvolvimento emocional.",
+
     heroAria: "Sala de aula com crianças",
     directorAlt: "Foto da diretora",
     missionAlt: "Imagem aluna Sandbox",
     philosophyAlt: "Crianças aprendendo na Sandbox",
   },
+
   en: {
-    heroTitle: "About Sandbox",
+    heroTitle: "About Sandbox", // mantém o equivalente em inglês
+
     sectionSchoolTitle: "Our School",
-    welcomeTitle: "Welcome to Sandbox!",
-    welcomeP1:
-      "Sandbox International School was created with a different purpose: to show that learning can be an adventure full of discoveries. From the very first months of life up to 12 years old, our students grow in a bilingual environment that blends the best of both worlds — Portuguese and English — with lightness and naturalness.",
+
+    welcomeTitle: "Welcome",
+    welcomeP1: "Welcome to Fortaleza International School.",
     welcomeP2:
-      "Our school was designed to offer complete experiences. We have wide open areas, a swimming pool, lawns and sand spaces that stimulate imagination and movement. Every corner has been planned to welcome and challenge children, promoting learning and joy.",
-    missionTitle: "Our Mission",
+      "We live in a world that changes every day — and we believe education must prepare children for the here and now. But we also believe childhood should not be rushed.",
+    welcomeP3:
+      "We are where imagination meets real possibilities — where local roots meet a global vision — where warmth meets academic excellence.",
+    welcomeP4:
+      "Here, English is not just a subject. It is lived experience, immersion, and connection with the world — developed naturally, with confidence and autonomy.",
+    welcomeP5:
+      "For us, learning goes beyond the classroom. It happens in the sand, under the trees, through projects, experiences, and discoveries that awaken curiosity and courage.",
+
+    missionTitle: "Mission",
     missionP1:
-      "Sandbox International School’s goal is to promote, in partnership with families, the quality of each child’s individual experience up to the age of twelve. Early childhood is fundamental for whole development, so we offer a carefully designed program in an environment full of meaningful stimulation.",
+      "To develop global citizens with a strong academic foundation, English fluency, and whole-child development, respecting each child’s time and learning process.",
     missionP2:
-      "In this space, children learn to live together, share, help one another, work in groups and “dream out loud”. Our environment is safe, healthy and joyful, where learning happens through real experiences, discoveries and wonder.",
+      "We prepare students for international exams, exchange programs, new cultures, and real-world challenges — without losing sight of the present, childhood, and emotional development.",
     missionP3:
-      "We want every child to have good memories of their childhood and for our team to feel proud to contribute to this growth. It is our responsibility to do what is right for children — and we embrace this commitment with an open mind and a constant desire to improve.",
-    philosophyTitle: "Our Philosophy",
+      "Our mission is to unite international education and human formation, preparing for the future while deeply valuing the now.",
+
+    philosophyTitle: "Philosophy",
     philosophyP1:
-      "Our educational philosophy is built on experience and knowledge. We consider every aspect of the child — social, intellectual and physical. We believe school and families are partners in education, and we want parents to feel welcomed and understood.",
+      "At Sandbox Fortaleza International School, we believe educating means preparing for the world without rushing childhood.",
     philosophyP2:
-      "Children learn through play, with hands-on experiences. They should be able to get messy, explore, invent and discover. Play is the purest form of learning and develops creativity, empathy and imagination.",
+      "We unite academic excellence and human development, integrating a solid foundation, English fluency, and emotional growth. For us, learning is alive: it happens through experiences, relationships, inquiry, and discovery.",
     philosophyP3:
-      "Our role is to provide a fun and creative environment, free from undue adult pressure, where each child can develop at their own pace, learning with joy and confidence.",
+      "We value each child’s time, respect their process, and cultivate autonomy, confidence, and agency.",
+    philosophyP4:
+      "We are international because we educate citizens who can engage in dialogue with the world.",
+    philosophyP5:
+      "We are from Fortaleza because we believe in warmth, closeness, and building genuine bonds.",
+    philosophyP6:
+      "We prepare students for certifications, exchange programs, and real challenges. But above all, we educate for the present — with awareness, identity, and purpose.",
+
     valuesTitle: "Our Values",
-    value1Title: "Bilingual Immersion",
+    value1Title: "Bilingual Experience",
     value1Text:
-      "Children live in Portuguese and English every day. This immersion boosts cognitive agility, cultural respect and global communication.",
-    value2Title: "Community",
+      "English is lived experience, immersion, and connection with the world — developed naturally, with confidence and autonomy.",
+    value2Title: "A Childhood Respected",
     value2Text:
-      "We believe in the strength of the school community. Students, families and staff walk together with respect, support and cooperation.",
-    value3Title: "Global Citizenship",
+      "We believe childhood should not be rushed. We respect each child’s time and learning process.",
+    value3Title: "Global Vision, Local Roots",
     value3Text:
-      "We prepare global citizens with empathy, ethics and collaboration, able to act positively in any culture.",
-    value4Title: "Whole-Child Development",
+      "We are where local roots meet a global vision: warmth, closeness, and genuine bonds.",
+    value4Title: "Excellence with Humanity",
     value4Text:
-      "We cultivate academic, emotional, social and creative growth, forming confident and joyful individuals.",
+      "We unite academic excellence and human development, integrating a solid foundation, English fluency, and emotional growth.",
+
     heroAria: "Classroom with children",
     directorAlt: "Photo of the principal",
     missionAlt: "Sandbox student image",
@@ -117,10 +153,13 @@ function SobrePage() {
             className="AdrianaImg"
           />
           <div className="container_texto_4">
-            <h2>{t.welcomeTitle}</h2>
-            <p>{t.welcomeP1}</p>
-            <p>{t.welcomeP2}</p>
-          </div>
+  <h2>{t.welcomeTitle}</h2>
+  <p>{t.welcomeP1}</p>
+  <p>{t.welcomeP2}</p>
+  <p>{t.welcomeP3}</p>
+  <p>{t.welcomeP4}</p>
+  <p>{t.welcomeP5}</p>
+</div>
         </div>
       </section>
 

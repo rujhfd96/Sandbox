@@ -6,7 +6,7 @@ import HeroVideo from "../../../public/IMAGENS/videoimpor2.mp4";
 import LangImg from "../../../public/IMAGENS/linguagem2.jpg";
 import WorldImg from "../../../public/IMAGENS/Enriquecimento2.jpg";
 import GrowthImg from "../../../public/IMAGENS/Enriquecimento3.jpg";
-import CasaSandbox from "../../../public/IMAGENS/piscina.jpg";
+import CasaSandbox from "../../../public/IMAGENS/FAIXADA6.png";
 import Aviao from "../../../public/IMAGENS/inter.jpg";
 import { useLanguage } from "../../context/LanguageContext";
 //import faixada from "../../../public/IMAGENS/faixada.jpeg"
